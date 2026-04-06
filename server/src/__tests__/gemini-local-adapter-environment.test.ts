@@ -30,6 +30,7 @@ console.log(JSON.stringify({
     await fs.chmod(scriptPath, 0o755);
     return scriptPath;
   }
+  await fs.chmod(cmdPath, 0o755);
   return cmdPath;
 }
 
@@ -50,6 +51,7 @@ process.exit(1);
     await fs.chmod(scriptPath, 0o755);
     return scriptPath;
   }
+  await fs.chmod(cmdPath, 0o755);
   return cmdPath;
 }
 
